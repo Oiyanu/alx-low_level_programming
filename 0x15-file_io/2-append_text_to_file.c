@@ -21,7 +21,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content)
 	{
 		for (lenlett = 0; text_content[lenlett]; lenlett++)
-
+			;
 		lenwr = write(f_des, text_content, lenlett);
 
 		if (lenwr == -1)
